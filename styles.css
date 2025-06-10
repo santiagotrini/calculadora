@@ -1,0 +1,44 @@
+#screen {
+  font-family: monospace;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px;
+  font-size: 2.5em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+#calc {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#calc button {
+  width: 50px;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+
+#keyboard {
+  
+  display: grid;
+  gap: 2px;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+
+#plus {
+  grid-area: 4 / 4 / 6 / 5;
+  height: 100px;
+}
